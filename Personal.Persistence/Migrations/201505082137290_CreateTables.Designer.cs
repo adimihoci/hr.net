@@ -7,13 +7,13 @@ namespace Personal.Persistence.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class CreateDepartments : IMigrationMetadata
+    public sealed partial class CreateTables : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateDepartments));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateTables));
         
         string IMigrationMetadata.Id
         {
-            get { return "201505041314518_CreateDepartments"; }
+            get { return "201505082137290_CreateTables"; }
         }
         
         string IMigrationMetadata.Source

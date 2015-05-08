@@ -12,7 +12,7 @@ namespace Personal.Persistence.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
             ContextKey = "Personal.Persistence.HrDbContext";
         }
 

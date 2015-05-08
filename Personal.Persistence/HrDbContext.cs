@@ -11,13 +11,16 @@ namespace Personal.Persistence
 {
     public class HrDbContext : DbContext, IHrContext
     {
-        public DbSet<Entities.Job> Jobs { get; set; }
+        public DbSet<Job> Jobs { get; set; }
+        public DbSet<Location> Locations { get; set; }
+        public DbSet<Department> Departments { get; set; }
+        public DbSet<Employee> Employees { get; set; }
 
 
         public HrDbContext()
             : base("Personal")
         {
-            
+            Configuration.LazyLoadingEnabled = true;
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -28,8 +31,6 @@ namespace Personal.Persistence
             base.OnModelCreating(modelBuilder);
         }
 
-        public DbSet<Location> Locations { get; set; }
-        public DbSet<Department> Departments { get; set; }
-        public DbSet<Employee> Employees { get; set; }
+        
     }
 }

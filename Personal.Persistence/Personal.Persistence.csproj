@@ -59,17 +59,9 @@
     <Compile Include="InMemoryDepartmentSet.cs" />
     <Compile Include="InMemoryLocationSet.cs" />
     <Compile Include="InMemoryJobsSet.cs" />
-    <Compile Include="Migrations\201505041243578_InitialCreate.cs" />
-    <Compile Include="Migrations\201505041243578_InitialCreate.Designer.cs">
-      <DependentUpon>201505041243578_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201505041314518_CreateDepartments.cs" />
-    <Compile Include="Migrations\201505041314518_CreateDepartments.Designer.cs">
-      <DependentUpon>201505041314518_CreateDepartments.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201505041406599_RemoveCascadeDelete.cs" />
-    <Compile Include="Migrations\201505041406599_RemoveCascadeDelete.Designer.cs">
-      <DependentUpon>201505041406599_RemoveCascadeDelete.cs</DependentUpon>
+    <Compile Include="Migrations\201505082137290_CreateTables.cs" />
+    <Compile Include="Migrations\201505082137290_CreateTables.Designer.cs">
+      <DependentUpon>201505082137290_CreateTables.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,14 +79,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201505041243578_InitialCreate.resx">
-      <DependentUpon>201505041243578_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201505041314518_CreateDepartments.resx">
-      <DependentUpon>201505041314518_CreateDepartments.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201505041406599_RemoveCascadeDelete.resx">
-      <DependentUpon>201505041406599_RemoveCascadeDelete.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201505082137290_CreateTables.resx">
+      <DependentUpon>201505082137290_CreateTables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
