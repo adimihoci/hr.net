@@ -7,8 +7,8 @@ namespace Personal.WebApi
 {
     public class JobsController : ApiController
     {
-        private readonly InMemoryHrContext context;
-        public JobsController(InMemoryHrContext ctx)
+        private readonly HrDbContext context;
+        public JobsController(HrDbContext ctx)
         {
             context = ctx;
         }

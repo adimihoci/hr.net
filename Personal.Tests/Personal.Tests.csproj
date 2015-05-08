@@ -42,6 +42,7 @@
       <HintPath>..\packages\Fixie.1.0.0.15\lib\net45\Fixie.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.JScript" />
     <Reference Include="Shouldly, Version=2.5.0.0, Culture=neutral, PublicKeyToken=6042cbcb05cbc941, processorArchitecture=MSIL">
       <HintPath>..\packages\Shouldly.2.5.0\lib\net40\Shouldly.dll</HintPath>
       <Private>True</Private>
@@ -56,11 +57,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DepartmentTests.cs" />
     <Compile Include="InMemoryHrContextTests.cs" />
+    <Compile Include="JobsTests.cs" />
+    <Compile Include="LocationTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

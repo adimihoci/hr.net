@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HrDbContext.cs" />
     <Compile Include="IHrContext.cs" />
     <Compile Include="InMemoryDbAsyncEnumerable.cs" />
     <Compile Include="InMemoryDbAsyncEnumerator.cs" />
@@ -58,10 +59,25 @@
     <Compile Include="InMemoryDepartmentSet.cs" />
     <Compile Include="InMemoryLocationSet.cs" />
     <Compile Include="InMemoryJobsSet.cs" />
+    <Compile Include="Migrations\201505041243578_InitialCreate.cs" />
+    <Compile Include="Migrations\201505041243578_InitialCreate.Designer.cs">
+      <DependentUpon>201505041243578_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201505041314518_CreateDepartments.cs" />
+    <Compile Include="Migrations\201505041314518_CreateDepartments.Designer.cs">
+      <DependentUpon>201505041314518_CreateDepartments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201505041406599_RemoveCascadeDelete.cs" />
+    <Compile Include="Migrations\201505041406599_RemoveCascadeDelete.Designer.cs">
+      <DependentUpon>201505041406599_RemoveCascadeDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -69,6 +85,17 @@
       <Project>{FBD9FE6D-E72F-4CCF-B562-C7AC15E153AA}</Project>
       <Name>Personal.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201505041243578_InitialCreate.resx">
+      <DependentUpon>201505041243578_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505041314518_CreateDepartments.resx">
+      <DependentUpon>201505041314518_CreateDepartments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505041406599_RemoveCascadeDelete.resx">
+      <DependentUpon>201505041406599_RemoveCascadeDelete.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
